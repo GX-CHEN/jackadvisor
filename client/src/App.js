@@ -27,7 +27,7 @@ class App extends React.Component {
                 className="card-container"
                 title={text.timerTitle}
                 extra={
-                  <a href="/timer">
+                  <a href="https://gx-chen.github.io/stand-timer/">
                     <Button type="primary" shape="circle">
                       <RightOutlined />
                     </Button>
@@ -44,7 +44,7 @@ class App extends React.Component {
                 className="card-container"
                 title={text.colorTitle}
                 extra={
-                  <a href="/color">
+                  <a href="https://classycolorful.com/">
                     <Button type="primary" shape="circle">
                       <RightOutlined />
                     </Button>
