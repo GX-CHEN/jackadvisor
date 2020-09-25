@@ -12,7 +12,7 @@ class App extends React.Component {
       !localStorage.getItem("language") ||
       localStorage.getItem("language") === "null"
     ) {
-      localStorage.setItem("language", detectBrowserLanguage());
+      localStorage.setItem("language", detectBrowserLanguage() || "en-US");
     }
   }
 
@@ -65,7 +65,7 @@ class App extends React.Component {
           className="lang-button"
           onClick={changeLanguage}
         >
-          {localStorage.getItem("language") === "zh-CN" ? "EN" : "中"}
+          {localStorage.getItem("language") === "en-US" ? "中":  "EN" }
         </Button>
       </div>
     );
